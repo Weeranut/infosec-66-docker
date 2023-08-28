@@ -6,8 +6,8 @@ services:
     ports:
       - 54322:5432
     environment:
-      - POSTGRES_USER=weeranut
-      - POSTGRES_PASSWORD=wutthi06
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
     image: 'postgres:latest'
     restart: 'unless-stopped'
 
